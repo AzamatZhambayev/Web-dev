@@ -1,0 +1,37 @@
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#fafafa;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.card{
+  background:#fff;
+  padding:30px;
+  width:280px;
+  text-align:center;
+  border:1px solid #ccc;
+}
+
+.logo{
+  font-size:32px;
+}
+
+input, button{
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+}
+
+button{
+  background:#3897f0;
+  color:white;
+  border:none;
+}
+
+.or{
+  margin:10px 0;
+}
