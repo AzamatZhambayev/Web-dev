@@ -1,0 +1,35 @@
+body{
+  font-family:Arial;
+  margin:0;
+}
+
+.hero{
+  text-align:center;
+  padding:40px;
+}
+
+.pricing{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  border:1px solid #ccc;
+  padding:20px;
+  width:150px;
+  text-align:center;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:10px;
+  padding:20px;
+}
+
+.addon{
+  border:1px solid #ccc;
+  padding:15px;
+  text-align:center;
+}

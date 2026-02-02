@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+            /* Requirement: At least 2 CSS element selectors */
+            body {
+                background-color: rgb(245, 245, 245);
+                font-family: sans-serif;
+                color: rgb(50, 50, 50);
+            }
+            
+            h1 {
+                color: rgb(200, 50, 50);
+                text-align: center;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+            }
+
+            /* Requirement: At least 1 CSS id or class selector */
+            #rec1 {
+                color: rgb(255, 255, 255);
+                background-color: rgb(181, 230, 69);
+                padding: 5px;
+            }
+
+            .recipe-title {
+                color: rgb(44, 122, 222);
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Kuka's Recipe Book</h1>
+
+        <h2>Contents:</h2>
+        <ol>
+            <li><a href="#rec1">Pancakes</a></li>
+            <li><a href="#rec2">Scrambled Eggs</a></li>
+            <li><a href="#rec3">Fruit Salad</a></li>
+        </ol>
+
+        <h2 id="rec1">Recipe #1 - Pancakes</h2>
+        <ul>
+            <li>Time: 15 minutes</li>
+            <li>Serves: 2 people</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Milk</td><td>250 ml</td></tr>
+                <tr><td>Egg</td><td>1 pc</td></tr>
+                <tr><td>Flour</td><td>200 g</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>Step 1:</strong> Mix egg, milk, and sugar.</p>
+        <p><strong>Step 2:</strong> Add flour and fry until golden.</p>
+
+        <hr>
+
+        <h2 id="rec2" class="recipe-title">Recipe #2 - Scrambled Eggs</h2>
+        <ul>
+            <li>Time: 5 minutes</li>
+            <li>Serves: 1 person</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Eggs</td><td>3 large</td></tr>
+                <tr><td>Butter</td><td>1 tbsp</td></tr>
+                <tr><td>Salt/Pepper</td><td>to taste</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>Step 1:</strong> Whisk eggs in a small bowl.</p>
+        <p><strong>Step 2:</strong> Melt butter in a pan and pour in eggs.</p>
+
+        <hr>
+
+        <h2 id="rec3" class="recipe-title">Recipe #3 - Fruit Salad</h2>
+        <ul>
+            <li>Time: 10 minutes</li>
+            <li>Serves: 3 people</li>
+        </ul>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Apple</td><td>2 pcs</td></tr>
+                <tr><td>Banana</td><td>1 pc</td></tr>
+                <tr><td>Honey</td><td>1 tbsp</td></tr>
+            </tbody>
+        </table>
+
+        <p><strong>Step 1:</strong> Chop all fruit into small cubes.</p>
+        <p><strong>Step 2:</strong> Toss in a bowl with honey and serve cold.</p>
+
+        <p><em>Source: <a href="https://eda.ru">Some recipes website</a></em></p>
+
+    </body>
+</html>
