@@ -5,7 +5,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
   :host {
@@ -330,51 +330,117 @@
   </div>
 </main>
 
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * 
- <router-outlet />
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
 
 
 
-<div class="product-grid">
-  <app-product-card
-    *ngFor="let product of products"
-    [product]="product">
-  </app-product-card>
-</div>
 
-<div class="card">
-  <img [src]="product.image" [alt]="product.name">
 
-  <h2>{{ product.name }}</h2>
-
-  <p>{{ product.description }}</p>
-
-  <p class="price">{{ product.price }} ₸</p>
-
-  <div class="rating">
-    ⭐ {{ product.rating }}
+<!--
+<div class="container">
+  <h1>Welcome to Angular's Signal Tutorial!</h1>
+  <h2>{{ count() }}</h2>
+  <div class="even-odd-indicator {{ isEven() ? 'even' : 'odd' }}">
+    @if (isEven()) {
+      Even
+    } @else {
+      Odd
+    }
   </div>
-
-  <a [href]="product.link" target="_blank">
-    View on Kaspi
-  </a>
-
-  <div class="share-buttons">
-    <button (click)="shareOnWhatsApp()">WhatsApp</button>
-    <button (click)="shareOnTelegram()">Telegram</button>
+  <div class="buttons">
+    <button (click)="decrement()">-</button>
+    <button (click)="increment()">+</button>
   </div>
 </div>
 
-<img [src]="selectedImage">
 
-<div class="thumbnails">
-  <img *ngFor="let img of product.images"
-       [src]="img"
-       (click)="selectImage(img)">
+<form>
+  <div>
+    <label>
+      Email
+      <input type="email" />
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Password
+
+      <input type="password" />
+    </label>
+  </div>
+
+  <div>
+    <label>
+
+      <input type="checkbox" />
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit">Log in</button>
+</form>
+
+<div class="form-debug">
+
+  <p>Email:</p>
+  <p>Password:</p>
+  <p>Remember me:</p>
 </div>
+
+
+<form>
+  <div>
+    <label>
+      Email
+      <input type="email" [formField]="loginForm.email" />
+    </label>
+    @if (loginForm.email().invalid() && loginForm.email().touched()) {
+      <div class="error">
+        @for (error of loginForm.email().errors(); track error.kind) {
+          <span>{{ error.message }}</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div>
+    <label>
+      Password
+      <input type="password" [formField]="loginForm.password" />
+    </label>
+    @if (loginForm.password().invalid() && loginForm.password().touched()) {
+      <div class="error">
+        @for (error of loginForm.password().errors(); track error.kind) {
+          <span>{{ error.message }}</span>
+        }
+      </div>
+    }
+  </div>
+
+  <div>
+    <label>
+      <input type="checkbox" [formField]="loginForm.rememberMe" />
+      Remember me
+    </label>
+  </div>
+
+  <button type="submit">Log in</button>
+</form>
+
+<div class="form-debug">
+  <h3>Current Form Values:</h3>
+  <p>Email: {{ loginForm.email().value() }}</p>
+  <p>Password: {{ loginForm.password().value() ? '••••••••' : '(empty)' }}</p>
+  <p>Remember me: {{ loginForm.rememberMe().value() ? 'Yes' : 'No' }}</p>
+</div>
+-->
