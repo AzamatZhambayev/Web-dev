@@ -18,9 +18,9 @@ export class AppComponent {
       description: 'Equipped with the new A17 Pro chip. Powerful camera and high performance.',
       price: 677900,
       rating: 4.8,
-      image: 'assets/images/iphone.jpg',
+      image: 'assets/images/iphone15.jpg',
       images: [
-        'assets/images/iphone.jpg'
+        'assets/images/iphone15.jpg'
       ],
       
      link: 'https://l.kaspi.kz/shop/BBwy8Xkq1ZeyL9B'
