@@ -1,0 +1,15 @@
+$kind: http-request
+method: PUT
+url: '{{baseUrl}}/api/products/1/'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Updated product",
+      "price": 12.5,
+      "category": 1
+    }

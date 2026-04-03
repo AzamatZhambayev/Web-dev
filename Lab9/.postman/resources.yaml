@@ -1,0 +1,15 @@
+# Use this workspace to collaborate
+workspace:
+  id: ""
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  environments:
+    ..\postman\environments\Lab9 Local.yaml: 62904094-5184-535a-ae75-0aefa387301e
+  collections:
+    ..\postman\collections\Online Shop API Lab10: a3f12a0e-cb76-42f0-806e-8e8c18cfd0af
+
+localResources:
+  collections:
+    - ..\OnlineShopAPI.postman_collection.json

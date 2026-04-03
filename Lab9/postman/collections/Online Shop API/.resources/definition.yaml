@@ -1,0 +1,6 @@
+$kind: collection
+name: 'Online Shop API'
+variables:
+  - key: baseUrl
+    value: '{{baseUrl}}'
+    description: 'Base URL for Online Shop API (set in environment)'
